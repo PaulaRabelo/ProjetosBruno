@@ -1,0 +1,540 @@
+*{
+    /* Aqui faz o reset do site */
+    margin: 0;
+    padding: 0;
+}
+
+/* Aqui começa a modificar o início */
+.body_index{
+    background-image: url(assets/Bandeira-Sudeste.png);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.div_title-index{
+    margin-top: 48vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.div_title-index > a > h1{
+    font-size: 30px;
+    animation-duration: 2s;
+    animation-name: titulo1;
+    width: 100vw;
+    margin-left: 0;
+}
+
+.div_title-index > a > h2{
+    font-size: 26px;
+    margin-left: 90px;
+    animation-duration: 3s;
+    animation-name: titulo2;
+}
+
+@keyframes titulo1{
+    from{
+        margin-left: 100vw;
+    }
+
+    to{
+        margin-left: 0;
+    }
+}
+
+@keyframes titulo2{
+    from{
+        margin-top: 100vw;
+    }
+
+    to{
+        margin-top: 0;
+    }
+}
+
+/* Aqui começa a modificar a home */
+
+.body_home{
+    /* Aqui define o background e as cores da fonte */
+    background-image: url(assets/rio-de-janeiro-capa2019-01.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+header{
+    display: flex;
+    padding-top: 1vh;
+    gap: 2vw;
+    background: linear-gradient(rgb(141, 195, 212, 10), rgb(173, 216, 230, 0.7));
+}
+
+nav{
+    display: flex;
+    gap: 2vw;
+    font-size: 20px;
+    margin-top: 0.75vh;
+}
+
+nav > a:hover{
+    /* Aqui faz os links aumentarem */
+    font-size: 22px;
+}
+
+h1{
+    margin-left: 75px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.div_home-page{
+    /* Aqui define o fundo transparente */
+    margin-left: 10vw;
+    margin-top: 2vh;
+    width: 80vw;
+    height: 170vh;
+    border: 1px solid black;
+    background-color: rgb(0, 0, 0, 0.9);
+    padding: 20px;
+    animation-duration: 1s;
+    animation-name: page;
+}
+
+@keyframes page{
+    from{
+        margin-left: 100vw;
+    }
+
+    to{
+        margin-left: 10vw;
+    }
+}
+
+.sections_home-page{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2{
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.section_flags{
+    border: 3px solid blue;
+    margin: 10px;
+    width: 40vw;
+    height: 70vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section-title{
+    /* Aqui faz os títulos dass sessões ficarem bonitinhas */
+    background-color: blue;
+    border: 1px solid blue;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.section_flags-data{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40vw;
+}
+
+.section_mascot{
+    border: 3px solid blue;
+    margin: 10px;
+    width: 35vw;
+    height: 70vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section_mascot-data{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.figure-mascot{
+    width: 15vw;
+    height: 60vh;
+}
+
+#img-mascote{
+    width: 15vw;
+    height: 50vh;
+}
+
+.section_map{
+    border: 3px solid blue;
+    margin: 10px;
+    width: 40vw;
+    height: 84vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section_map-data{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section_description{
+    border: 3px solid blue;
+    margin: 10px;
+    width: 35vw;
+    height: 84vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section_description-data{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h3{
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a > img{
+    width: 200px;
+    height: 150px;
+    margin-left: 50px;
+}
+
+.link_nome-estados{
+    font-size: 25px;
+    margin-left: 30px;
+    color: lightblue;
+}
+
+.link-bandeiras{
+    text-decoration: none;
+}
+
+.link-bandeiras:hover{
+    text-decoration: underline;
+}
+
+figcaption{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.p_map{
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.p_description{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#img-sudeste{
+    width: 15vw;
+    height: 30vh;
+}
+
+footer{
+    margin-top: 30px;
+    background-color: purple;
+    display: flex;
+    padding: 10px;
+    padding-left: 30vw;
+    gap: 30px;
+}
+
+.div_creators{
+    width: 300px;
+}
+
+.link_authors{
+    color: white;
+    text-decoration: none;
+}
+
+.div_copyright{
+    width: 350px;
+    text-align: justify;
+}
+
+#p_capi{
+    font-size: 21px;
+}
+
+/* Aqui começam a estilização de São Paulo */
+
+.body_sp{
+    background-image: url(assets/são-paulo-paisagem.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.div_sp-page{
+    margin-left: 10vw;
+    margin-top: 2vh;
+    width: 80vw;
+    height: 305vh;
+    border: 1px solid black;
+    background-color: rgb(0, 0, 0, 0.9);
+    padding: 20px;
+    animation-duration: 1s;
+    animation-name: page;
+}
+
+.section_sp-food{
+    border: 3px solid blue;
+    margin: 10px;
+    width: 76vw;
+    height: 130vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sp-content-1{
+    background-color: rgb(199, 53, 53);
+}
+
+.sp-content-2{
+    background-color: rgb(247, 247, 247);
+    color: black;
+}
+
+.sp-content-3{
+    background-color: rgb(56, 56, 56);
+}
+
+.section_sp-music{
+    border: 3px solid blue;
+    margin: 10px;
+    width: 76vw;
+    height: 165vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section_music-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    gap: 40px;
+    padding: 10px;
+}
+
+.section_music-data > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-size: 24px;
+}
+
+.section_music-data > div > p{
+    width: 60%;
+}
+
+h4{
+    display: block;
+    width: 100%;
+    font-size: 30px;
+}
+
+video{
+    margin-bottom: 5px;
+    width: 35%;
+}
+
+/* Aqui começa a estilização do Rio de Janeiro */
+
+.body_rj{
+    background-image: url(assets/rio-background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.div_rj-page{
+    margin-left: 10vw;
+    margin-top: 2vh;
+    width: 80vw;
+    height: 321vh;
+    border: 1px solid black;
+    background-color: rgb(0, 0, 0, 0.9);
+    padding: 20px;
+    animation-duration: 1s;
+    animation-name: page;
+}
+
+.section_rj-food{
+    border: 3px solid blue;
+    margin: 10px;
+    width: 76vw;
+    height: 127vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.rj-content-1, .rj-content-3{
+    background-color: lightskyblue;
+}
+
+.rj-content-2{
+    background-color: rgb(247, 247, 247);
+    color: black;
+}
+
+.section_rj-music{
+    border: 3px solid blue;
+    margin: 10px;
+    width: 76vw;
+    height: 185vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Aqui começa a estilização de Minas Gerais */
+
+.body_mg{
+    background-image: url(assets/minas-background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.div_mg-page{
+    margin-left: 10vw;
+    margin-top: 2vh;
+    width: 80vw;
+    height: 315vh;
+    border: 1px solid black;
+    background-color: rgb(0, 0, 0, 0.9);
+    padding: 20px;
+    animation-duration: 1s;
+    animation-name: page;
+}
+
+.section_mg-food{
+    border: 3px solid blue;
+    margin: 10px;
+    width: 76vw;
+    height: 130vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.mg-content-1, .mg-content-3{
+    background-color: rgb(247, 247, 247);
+    color: black;
+}
+
+.mg-content-2{
+    background-color: rgb(233, 34, 34);
+}
+
+.section_mg-music{
+    border: 3px solid blue;
+    margin: 10px;
+    width: 76vw;
+    height: 175vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Aqui começa a estilização do Espírito Santo */
+
+.body_es{
+    background-image: url(assets/espirito-santo-background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.div_es-page{
+    margin-left: 10vw;
+    margin-top: 2vh;
+    width: 80vw;
+    height: 290vh;
+    border: 1px solid black;
+    background-color: rgb(0, 0, 0, 0.9);
+    padding: 20px;
+    animation-duration: 1s;
+    animation-name: page;
+}
+
+.section_es-food{
+    border: 3px solid blue;
+    margin: 10px;
+    width: 76vw;
+    height: 125vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section_food-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    gap: 40px;
+    padding: 10px;
+}
+
+.section_food-data > div{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 24px;
+}
+
+.es-content-1{
+    background-color: lightskyblue;
+    color: black;
+}
+
+.es-content-2{
+    background-color: rgb(247, 247, 247);
+    color: rgb(70, 98, 107);
+}
+
+.es-content-3{
+    background-color: pink;
+    color: black;
+}
+
+.section_food-data > div > img{
+    width: 400px;
+    height: 200px;
+}
+
+.section_es-music{
+    border: 3px solid blue;
+    margin: 10px;
+    width: 76vw;
+    height: 155vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#spotify{
+    color: white;
+}
