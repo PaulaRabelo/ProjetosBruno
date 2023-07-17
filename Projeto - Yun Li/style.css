@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     /* Aqui altera o corpo inteiro */
     background-image: url(assets/img-background.jpg);
@@ -58,6 +62,15 @@ h1{
 header > a{
     padding: 0 70px;
     border: 1px solid black;
+}
+
+header a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(149, 109, 236);
+    text-decoration: none;
 }
 
 header > div{
@@ -126,6 +139,11 @@ header > div{
 
 .img-ter-album{
     width: 200px;
+}
+
+.img_prin-album:hover, .img-sec-album:hover, .img-ter-album:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
 }
 
 /* Aqui altera a parte do resumo */
@@ -289,6 +307,11 @@ footer{
     height: 10vh;
     display: flex;
     gap: 10px;
+}
+
+footer a:hover, footer a {
+    color: black;
+    text-decoration: underline;
 }
 
 footer > div  h2{
