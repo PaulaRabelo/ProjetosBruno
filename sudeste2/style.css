@@ -145,8 +145,10 @@ section {
 
 .mapa {
     position: relative;
-    padding-bottom: 80%;
-    background-color: black;
+    padding-bottom: 100%;
+    background-color: rgba(0, 0, 0, 0.24);
+    background-image: url(assets/mapa-sudeste.jpg);
+    background-size: cover;
 }
 
 .mapa iframe {
