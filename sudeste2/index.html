@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunidade Sudeste</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body onresize="resize()">
@@ -14,18 +15,18 @@
         <span class="material-symbols-outlined" id="menu" onclick="clickMenu()">menu</span>
         <nav id="nav">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Rio de Janeiro</a></li>
-                <li><a href="">São Paulo</a></li>
-                <li><a href="">Minas Gerais</a></li>
-                <li><a href="">Espírito Santo</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="paginas/rj.html">Rio de Janeiro</a></li>
+                <li><a href="paginas/sp.html">São Paulo</a></li>
+                <li><a href="paginas/mg.html">Minas Gerais</a></li>
+                <li><a href="paginas/es.html">Espírito Santo</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="main_home">
         <!-- Seção de Bandeiras -->
-        <section>
+        <section class="section_home">
             <div class="div_title">
                 <h2>Estados do Sudeste</h2>
             </div>
@@ -58,7 +59,7 @@
         </section>
 
         <!-- Seção do Mascote -->
-        <section>
+        <section class="section_home">
             <div class="div_title">
                 <h2>Mascote</h2>
             </div>
@@ -72,7 +73,7 @@
         </section>
 
         <!-- Seção do Mapa -->
-        <section>
+        <section class="section_home">
             <div class="div_title">
                 <h2>Mapa</h2>
             </div>
@@ -92,7 +93,7 @@
         </section>
 
         <!-- Seção de Resumo -->
-        <section>
+        <section class="section_home">
             <div class="div_title">
                 <h2>Resumo dos Estados</h2>
             </div>
@@ -123,6 +124,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
